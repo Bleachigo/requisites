@@ -165,3 +165,14 @@ section {
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (max-width: 670px) {
+  .ppb-title {
+    text-align: center;
+  }
+
+  .requisites__item {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

@@ -30,20 +30,36 @@
           <div class="requisites">
             <div class="requisites__item base-back box-shadow block-radius">
               <p class="requisites__name">IBAN Монобанк:</p>
-              <p class="requisites__description">
+              <p id="iban" class="requisites__description">
                 UA513220010000026006370004597
               </p>
-              <button class="btn">Скопіювати IBAN</button>
+              <button type="button" class="btn btn--iban" data-target="iban">
+                Скопіювати IBAN
+              </button>
             </div>
             <div class="requisites__item base-back box-shadow block-radius">
               <p class="requisites__name">ЄДРПОУ:</p>
-              <p class="requisites__description">2659800304</p>
-              <button class="btn">Скопіювати ЄДРПОУ</button>
+              <p id="edrpou" class="requisites__description">2659800304</p>
+              <button
+                type="button"
+                class="btn btn--edrpou"
+                data-target="edrpou"
+              >
+                Скопіювати ЄДРПОУ
+              </button>
             </div>
             <div class="requisites__item base-back box-shadow block-radius">
               <p class="requisites__name">Призначення платежу:</p>
-              <p class="requisites__description">Оплата за товари</p>
-              <button class="btn">Скопіювати призначення</button>
+              <p id="payment-purpose" class="requisites__description">
+                Оплата за товари
+              </p>
+              <button
+                type="button"
+                class="btn btn--purpose"
+                data-target="payment-purpose"
+              >
+                Скопіювати призначення
+              </button>
             </div>
           </div>
         </div>
@@ -62,5 +78,6 @@
       <!--   </div> -->
       <!-- </section> -->
     </main>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

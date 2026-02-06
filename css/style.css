@@ -59,6 +59,18 @@ section {
   box-shadow: 0 4px 8px rgba(76, 175, 80, 0.4);
 }
 
+.btn--iban {
+  min-width: 152px;
+}
+
+.btn--edrpou {
+  min-width: 176px;
+}
+
+.btn--purpose {
+  min-width: 210px;
+}
+
 .block-radius {
   border-radius: 12px;
 }

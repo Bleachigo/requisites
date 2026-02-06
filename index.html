@@ -20,14 +20,14 @@
       <div class="after-header">
         <h2 class="after-header__title">Реквізити для оплати:</h2>
       </div>
-      <section class="details base-back block-radius box-shadow">
-        <h2 class="base-back details__title">
+      <section class="section base-back block-radius box-shadow">
+        <h2 class="base-back section__title round-border-back">
           <span class="capital">фоп</span> Шонц Оксана Іванівна
         </h2>
-        <div class="copy-data">
+        <div class="copy-data base-back">
           <p class="instruction-text">Скопіюйте для оплати</p>
           <div class="requisites">
-            <div class="requisites__item base-back box-shadow block-radius">
+            <div class="requisites__item top-back box-shadow block-radius">
               <p class="requisites__name">
                 <span class="capital">iban</span> ПриватБанк:
               </p>
@@ -38,7 +38,7 @@
                 Скопіювати <span class="capital">iban</span>
               </button>
             </div>
-            <div class="requisites__item base-back box-shadow block-radius">
+            <div class="requisites__item top-back box-shadow block-radius">
               <p class="requisites__name capital">єдрпоу:</p>
               <p id="edrpou" class="requisites__description">3326815460</p>
               <button
@@ -49,7 +49,7 @@
                 Скопіювати <span class="capital">єдрпоу</span>
               </button>
             </div>
-            <div class="requisites__item base-back box-shadow block-radius">
+            <div class="requisites__item top-back box-shadow block-radius">
               <p class="requisites__name">Призначення платежу:</p>
               <p id="payment-purpose" class="requisites__description">
                 Оплата за товари
@@ -66,19 +66,27 @@
         </div>
       </section>
       <div class="separator"></div>
-      <!-- <section> -->
-      <!--   <h3>Після оплати:</h3> -->
-      <!--   <p> -->
-      <!--     Надішліть менеджеру скріншот квитанції про успішну оплату, а також -->
-      <!--     заповніть шаблон: -->
-      <!--   </p> -->
-      <!--   <div> -->
-      <!--     <p>ПІБ:</p> -->
-      <!--     <p>Населений пункт:</p> -->
-      <!--     <p>Відділення НП:</p> -->
-      <!--     <p>Телефон отримувача:</p> -->
-      <!--   </div> -->
-      <!-- </section> -->
+      <section class="section base-back block-radius box-shadow">
+        <h2 class="section__title section__title--mb">Після оплати:</h2>
+        <p class="notice">
+          Надішліть менеджеру
+          <strong>скріншот квитанції про успішну оплату</strong>, а також
+          <strong>заповніть шаблон</strong>:
+        </p>
+        <div class="flex-wrapper">
+          <ul class="template base-back round-border-back">
+            <li class="template__item"><p class="capital">піб:</p></li>
+            <li class="template__item"><p>Населений пункт:</p></li>
+            <li class="template__item">
+              <p>Відділення <span class="capital">нп</span>:</p>
+            </li>
+            <li class="form-list__item"><p>Телефон отримувача:</p></li>
+          </ul>
+          <button type="button" class="btn template__btn">
+            Скопіювати текст шаблону
+          </button>
+        </div>
+      </section>
     </main>
     <script src="scripts/script.js"></script>
   </body>

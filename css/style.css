@@ -22,13 +22,14 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+pre {
   margin: 0;
 }
 
 .btn {
   background: #4caf50;
-  color: white;
+  color: #e0e0e0;
   border: none;
   padding: 10px 16px;
   border-radius: 8px;
@@ -213,14 +214,103 @@ p {
   align-self: center;
 }
 
+.telegram {
+  border-color: #0088cc;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.telegram__icon {
+  width: 40px;
+  height: 40px;
+  background: #e0e0e0 url("../img/telegram.png") center / 25px 25px no-repeat;
+}
+
+.msgr-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b0b0b0;
+  margin-bottom: 5px;
+}
+
+.telegram__link {
+  background: #0088cc;
+  text-decoration: transparent;
+}
+
+.telegram__link:hover {
+  background: #0088ad;
+  box-shadow: 0 4px 8px rgba(0 136 173 / 0.4);
+}
+
+.viber {
+  border-color: #7360f2;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.viber__icon {
+  width: 40px;
+  height: 40px;
+  background: #e0e0e0 url("../img/viber.png") center / 25px 25px no-repeat;
+}
+
+.viber__link {
+  background: #7360f2;
+  text-decoration: transparent;
+}
+
+.viber__link:hover {
+  background: #7349f2;
+  box-shadow: 0 4px 8px rgba(115 73 242 / 0.4);
+}
+
+.telegram__link,
+.viber__link {
+  margin-left: auto;
+}
+
 @media screen and (max-width: 670px) {
-  .section__title {
+  .fop-name {
     border-right: 4px solid #4caf50;
+  }
+
+  .section__title {
     text-align: center;
   }
 
   .requisites__item {
     flex-direction: column;
     gap: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .telegram__info,
+  .viber__info {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .telegram {
+    border-right: 4px solid #0088cc;
+  }
+
+  .viber {
+    border-right: 4px solid #7360f2;
+  }
+
+  .telegram__icon,
+  .viber__icon {
+    display: none;
+  }
+
+  .telegram__link,
+  .viber__link {
+    margin: auto;
   }
 }

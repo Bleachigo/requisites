@@ -25,10 +25,6 @@ p {
   margin: 0;
 }
 
-section {
-  padding: 16px 16px 20px;
-}
-
 .container {
   padding-inline: 16px;
 }
@@ -94,7 +90,6 @@ section {
   font-weight: 700;
   letter-spacing: 0.5px;
   text-align: center;
-  margin-bottom: 15px;
 }
 
 .header__text {
@@ -104,13 +99,12 @@ section {
 }
 
 .after-header {
-  padding-top: 130px;
+  padding: 90px 0 20px;
 }
 
 .after-header__title {
   font-size: 18px;
   font-weight: 700;
-  padding-bottom: 15px;
 }
 
 .after-header__title::before {
@@ -125,8 +119,18 @@ section {
   transform: rotate(45deg);
 }
 
-.requisites > div:not(:last-child) {
-  margin-bottom: 15px;
+.details {
+  padding: 16px 16px 20px;
+}
+
+.details__title {
+  border-left: 4px solid #4caf50;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .requisites__item {
@@ -135,6 +139,10 @@ section {
   align-items: center;
   padding: 12px;
   background: #333;
+}
+
+.requisites__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .requisites__name {
@@ -147,18 +155,7 @@ section {
   font-weight: 600;
 }
 
-.ppb-title {
-  border-left: 4px solid #4caf50;
-  padding: 16px;
-  border-radius: 12px;
-  margin-bottom: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-.ppb {
+.capital {
   text-transform: uppercase;
 }
 

@@ -5,11 +5,12 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
   margin: 0;
+  padding-inline: 16px;
   font-family: "Montserrat", sans-serif;
   background: #1a1a1a;
   color: #fff;
@@ -25,10 +26,6 @@ p {
   margin: 0;
 }
 
-.container {
-  padding-inline: 16px;
-}
-
 .btn {
   background: #4caf50;
   color: white;
@@ -38,9 +35,6 @@ p {
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  /* flex-shrink: 0; */
-  /* white-space: nowrap; */
-  /* font-family: "Montserrat", sans-serif; */
   font-family: inherit;
   box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
   transition:
@@ -80,9 +74,11 @@ p {
 }
 
 .header {
-  padding: 20px 16px;
+  padding: 20px 0;
   position: fixed;
-  width: 100vw;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header__title {
@@ -173,6 +169,12 @@ p {
   margin: 12px 0;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.separator {
+  width: 97%;
+  border-bottom: 1px solid #333;
+  margin: 20px auto;
 }
 
 @media screen and (max-width: 670px) {

@@ -1,3 +1,4 @@
+// For buttons in fistr (Payment details) section
 const copyButtons = document.querySelectorAll(".btn");
 
 copyButtons.forEach((button) => {
@@ -18,4 +19,28 @@ copyButtons.forEach((button) => {
       console.log("Failed to copy!", err);
     }
   });
+});
+
+// For button in second (After payment) section
+const copyFormBtn = document.getElementById("copyTemplate");
+const formListItems = document.querySelectorAll("#template li");
+
+copyFormBtn.addEventListener("click", async () => {
+  // 1. Transform NodeList (elements) to lines array
+  // .map() gets the text, and .join('\n') unite them from new line
+  const wholeForm = Array.from(formListItems)
+    .map((li) => li.innerText)
+    .join("\n");
+
+  try {
+    // 2. Copy whole collected text
+    await navigator.clipboard.writeText(wholeForm);
+
+    // Visual feedback
+    const originalText = copyFormBtn.textContent;
+    copyFormBtn.textContent = "Текст шаблону скопійовано!";
+    setTimeout(() => (copyFormBtn.textContent = originalText), 2000);
+  } catch (err) {
+    console.log("Failed to copy!", err);
+  }
 });

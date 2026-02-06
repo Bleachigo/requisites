@@ -98,10 +98,6 @@ p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.flex-wrapper {
-  display: flex;
-}
-
 .header {
   padding: 20px 0;
   position: fixed;
@@ -196,18 +192,25 @@ p {
   color: #e0e0e0;
 }
 
+.afterpayment-container {
+  display: flex;
+  gap: 10px;
+}
+
 .template {
   font-size: 13px;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 6px;
+  flex-grow: 1;
 }
 
 .template__btn {
   display: flex;
   flex-wrap: wrap;
-  width: 110px;
+  width: 120px;
+  align-self: center;
 }
 
 @media screen and (max-width: 670px) {
